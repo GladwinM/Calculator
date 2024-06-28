@@ -1,6 +1,13 @@
-/* eslint-disable max-len */
-const Quote = () => (
-  <p className="quotePara">Mathematics is not about numbers, equations, computations or algorithms: it is about understanding. - William Paul Thurston</p>
-);
+/* eslint-disable */
+import React, { useState, useEffect } from "react";
+
+const Quote = () => {
+
+  return (
+    <div>
+      <p>{localStorage.getItem("randomQuote")}</p>
+    </div>
+  );
+};
 
 export default Quote;
